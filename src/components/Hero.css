@@ -1,0 +1,133 @@
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* To use your own image, replace the URL above with:
+   background-image: url('/path-to-your-image.jpg');
+   Place your image in the public folder and reference it like:
+   background-image: url('/background.jpg');
+*/
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: var(--text-light);
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+.hero-location {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.location-icon {
+  font-size: 1.75rem;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-cta:hover {
+  background-color: #3182ce;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hero-cta:focus {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-location {
+    font-size: 1.25rem;
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
+  }
+
+  .hero-cta {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-location {
+    font-size: 1.125rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,16 @@
+/* App Component Styles */
+.app {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Smooth scroll for the entire app */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible styles for accessibility */
+*:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
