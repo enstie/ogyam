@@ -1,4 +1,3 @@
-import React from 'react';
 import './About.css';
 
 /**
@@ -30,7 +29,7 @@ function About() {
             <h3>Our Community</h3>
             <p>
               A vibrant community of young believers who support each other through 
-              life's journey. We meet regularly for worship, Bible study, and fellowship 
+              life&apos;s journey. We meet regularly for worship, Bible study, and fellowship 
               activities that strengthen our bonds and deepen our faith.
             </p>
           </div>

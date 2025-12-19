@@ -1,4 +1,3 @@
-import React from 'react';
 import './Hero.css';
 
 /**
@@ -19,7 +18,7 @@ function Hero() {
           </p>
           <p className="hero-description">
             Join us in fellowship, worship, and growing together in faith.
-            Building a community of young believers seeking God's purpose.
+            Building a community of young believers seeking God&apos;s purpose.
           </p>
           <a href="#registration" className="hero-cta" aria-label="Register now">
             Register Now

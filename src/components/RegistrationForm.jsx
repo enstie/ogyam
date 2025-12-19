@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './RegistrationForm.css';
 
 /**
@@ -60,7 +60,7 @@ function RegistrationForm() {
     if (!formData.phoneNumber.trim()) {
       newErrors.phoneNumber = 'Phone number is required';
     } else {
-      const phoneRegex = /^[\d\s\-\+\(\)]{10,}$/;
+      const phoneRegex = /^[\d\s\-+()]{10,}$/;
       if (!phoneRegex.test(formData.phoneNumber)) {
         newErrors.phoneNumber = 'Please enter a valid phone number';
       }

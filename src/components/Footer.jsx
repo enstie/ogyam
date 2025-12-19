@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 
 /**
@@ -15,7 +14,7 @@ function Footer() {
           <div className="footer-section">
             <h3 className="footer-title">Rcc Youth Ministry</h3>
             <p className="footer-description">
-              Building a community of young believers seeking God's purpose in Asylum Down.
+              Building a community of young believers seeking God&apos;s purpose in Asylum Down.
             </p>
           </div>
 
